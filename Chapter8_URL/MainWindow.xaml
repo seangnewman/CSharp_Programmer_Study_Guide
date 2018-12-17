@@ -1,0 +1,15 @@
+﻿<Window x:Class="Chapter8_URL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chapter8_URL"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="515.217" Width="800">
+    <Grid Margin="0,0,2,33">
+        <Label x:Name="urlLabel" Content="Label" HorizontalAlignment="Left" Margin="71,41,0,0" VerticalAlignment="Top" Height="254" Width="667"/>
+        <TextBox x:Name="txtURL" HorizontalAlignment="Left" Height="23" Margin="71,377,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="480"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="616,400,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
+    </Grid>
+</Window>
