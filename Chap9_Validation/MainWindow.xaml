@@ -1,0 +1,34 @@
+﻿<Window x:Class="Chap9_Validation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chap9_Validation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid HorizontalAlignment="Left" Height="297" Margin="34,53,0,0" VerticalAlignment="Top" Width="692">
+        <Grid.RowDefinitions>
+            <RowDefinition x:Name="Email" />
+            <RowDefinition x:Name="Phone"/>
+            <RowDefinition x:Name="DateOfBirth"/>
+            <RowDefinition x:Name="ZipCode"/>
+            <RowDefinition x:Name="Website"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="Field"/>
+            <ColumnDefinition x:Name="Value"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="39" Width="300" FontSize="16"/>
+        <Label Content="Phone Number" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Center" Width="300" FontSize="16"/>
+        <Label Content="Date of Birth" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Center" Width="300" FontSize="16"/>
+        <Label Content="Zip Code" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Center" Width="300" FontSize="16"/>
+        <Label Content="Website" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Center" Width="300" FontSize="16"/>
+        <TextBox x:Name="txtEmail" Grid.Column="1"  Grid.Row="0" HorizontalAlignment="Left" Height="39" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="326" FontSize="16" TextChanged="txtEmail_TextChanged"/>
+        <TextBox x:Name="txtPhone" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Height="39" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="326" FontSize="16" TextChanged="txtPhone_TextChanged"/>
+        <TextBox x:Name="txtDOB" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" Height="39" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="326" FontSize="16" TextChanged="txtDOB_TextChanged"/>
+        <TextBox x:Name="txtZip" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" Height="39" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="326" FontSize="16" TextChanged="txtZip_TextChanged"/>
+        <TextBox x:Name="txtWebsite" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Left" Height="39" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="326" FontSize="16" TextChanged="txtWebsite_TextChanged"/>
+        <Button x:Name="frmButton" Grid.ColumnSpan="2" Content="Submit" HorizontalAlignment="Left" Margin="277,69,0,-45" Grid.Row="4" Width="126" RenderTransformOrigin="0.828,0.562" Click="frmButton_Click"/>
+    </Grid>
+
+</Window>
