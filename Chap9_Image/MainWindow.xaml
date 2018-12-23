@@ -1,0 +1,16 @@
+﻿<Window x:Class="Chap9_Image.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chap9_Image"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Image x:Name="imgURL" HorizontalAlignment="Left" Height="205" Margin="133,57,0,0" VerticalAlignment="Top" Width="533" Source="rc.bmp"/>
+        <TextBox x:Name="txtURL" HorizontalAlignment="Left" Height="37" Margin="94,300,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="322" FontSize="16"/>
+        <Button x:Name="btnURL" Content="Button" HorizontalAlignment="Left" Margin="523,318,0,0" VerticalAlignment="Top" Width="75" FontSize="16" Click="btnURL_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="523,380,0,0" VerticalAlignment="Top" Width="75" FontSize="16" Click="Button_Click"/>
+
+    </Grid>
+</Window>
